@@ -13,7 +13,7 @@
 | 6.11.2024 |  2h   |Module4:protecting the organization   | Done |
 | 7.11.2024 |  2h   |Module5:will your future in cybersecurity  | Done |
 | 8.11.2024 |  1h   |Module5:introduction the cybersecurity final exam   | Done |
-| 9.11.2024 |  1h   |lab1: sql injection  | Done |
+| 9.11.2024 |  2h   |lab1: sql injection  | Done |
 
 
 
