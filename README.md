@@ -13,9 +13,9 @@
 | 6.11.2024 |  2h   |Module4:protecting the organization   | Done |
 | 7.11.2024 |  2h   |Module5:will your future in cybersecurity  | Done |
 | 8.11.2024 |  1h   |Module5:introduction the cybersecurity final exam   | Done |
-| 9.11.2024 |  2h   |lab1: sql injection()  | Done |
-| 10.11.2024 |  2h   |lab1: Authentication()   | Done |
-| 14.11.2024 |  2h   |lab1: Access Control()   | Done |
+| 9.11.2024 |  2h   |lab1: sql injection(SQL injection vulnerability in WHERE clause allowing retrieval of hidden data)  | Done |
+| 10.11.2024 |  2h   |lab1: Authentication(Username enumeration via different responses)   | Done |
+| 14.11.2024 |  2h   |lab1: Access Control(Unprotected admin functionality)   | Done |
 
 
 
