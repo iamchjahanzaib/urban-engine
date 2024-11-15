@@ -16,6 +16,11 @@
 | 9.11.2024 |  2h   |lab1: sql injection(SQL injection vulnerability in WHERE clause allowing retrieval of hidden data)  | Done |
 | 10.11.2024 |  2h   |lab1: Authentication(Username enumeration via different responses)   | Done |
 | 14.11.2024 |  2h   |lab1: Access Control(Unprotected admin functionality)   | Done |
+| 15.11.2024 |  2h   |lab2: sql injection(SQL injection vulnerability allowing login bypass)   | Done |
+| 15.11.2024 |  2h   |lab2: Authentication(2FA simple bypass)   | Done |
+| 16.11.2024 |  2h   |lab2:  Access Control(Unprotected admin functionality with unpredictable URL)   | Done |
+
+
 
 
 
