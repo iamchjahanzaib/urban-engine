@@ -1,5 +1,5 @@
 import { Hono } from "https://deno.land/x/hono/mod.ts";
-import client from "./db/db.js";
+import client from "./database/database.js";
 import * as bcrypt from "https://deno.land/x/bcrypt/mod.ts"; // For password hashing
 
 const app = new Hono();
