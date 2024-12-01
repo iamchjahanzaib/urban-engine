@@ -13,14 +13,12 @@ CREATE TABLE zephyr_users (
     birthdate DATE NOT NULL,
     user_token UUID UNIQUE DEFAULT uuid_generate_v4()  -- Pseudonymized identifier
 );
-
 -- Resources table: Stores information about the resources that can be reserved
 CREATE TABLE zephyr_resources (
     resource_id SERIAL PRIMARY KEY,
     resource_name VARCHAR(100) NOT NULL,
     resource_description TEXT
 );
-
 -- Reservations table: Pseudonymized reservation entries, no direct user identity stored
 CREATE TABLE zephyr_reservations (
     reservation_id SERIAL PRIMARY KEY,
@@ -30,7 +28,6 @@ CREATE TABLE zephyr_reservations (
     reservation_end TIMESTAMP NOT NULL,
     CHECK (reservation_end > reservation_start)
 );
-
 -- Logs table: Tracks administrator actions, e.g., add/delete resources, without exposing sensitive data
 CREATE TABLE zephyr_admin_logs (
     log_id SERIAL PRIMARY KEY,
@@ -40,7 +37,6 @@ CREATE TABLE zephyr_admin_logs (
     reservation_id INT,
     timestamp TIMESTAMP DEFAULT NOW()
 );
-
 -- Function to check if the user is over 15 years old before making a reservation
 CREATE OR REPLACE FUNCTION zephyr_check_age() RETURNS TRIGGER AS $$
 BEGIN
@@ -50,13 +46,11 @@ BEGIN
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
-
 -- Trigger to enforce age check before inserting a reservation
 CREATE TRIGGER zephyr_check_age_trigger
 BEFORE INSERT ON zephyr_reservations
 FOR EACH ROW
 EXECUTE FUNCTION zephyr_check_age();
-
 -- View for anonymous access: Shows booked resources without reserver’s identity (pseudonymized view)
 CREATE VIEW zephyr_booked_resources_view AS
 SELECT
@@ -65,7 +59,6 @@ SELECT
     res.reservation_end
 FROM zephyr_resources r
 JOIN zephyr_reservations res ON r.resource_id = res.resource_id;
-
 -- Deletion function for the right to erasure (compliant with GDPR)
 CREATE OR REPLACE FUNCTION zephyr_erase_user(user_id_to_erase INT) RETURNS VOID AS $$
 DECLARE
@@ -73,7 +66,6 @@ DECLARE
 BEGIN
     -- Find the pseudonym (token) of the user to erase
     SELECT user_token INTO user_token_to_erase FROM zephyr_users WHERE user_id = user_id_to_erase;
-
     -- Delete user and associated data
     DELETE FROM zephyr_reservations WHERE reserver_token = user_token_to_erase;
     DELETE FROM zephyr_users WHERE user_id = user_id_to_erase;

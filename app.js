@@ -1,9 +1,8 @@
 import { Hono } from "https://deno.land/x/hono/mod.ts";
-import client from "./database/database.js";
+import client from "./db/db.js";
 import * as bcrypt from "https://deno.land/x/bcrypt/mod.ts"; // For password hashing
 
 const app = new Hono();
-
 // Serve the registration form
 app.get('/register', async (c) => {
   return c.html(await Deno.readTextFile('./views/register.html'));
@@ -17,6 +16,7 @@ app.post('/register', async (c) => {
   const password = body.password;
   const birthdate = body.birthdate;
   const role = body.role;
+  
 
   try {
     // Hash the user's password
@@ -40,8 +40,6 @@ app.post('/register', async (c) => {
     return c.text('Error during registration', 500);
   }
 });
-app.listen({ port: 8080, hostname: "0.0.0.0" });
-
 
 Deno.serve(app.fetch);
 
