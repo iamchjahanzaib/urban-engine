@@ -21,6 +21,8 @@
 | 22.11.2024 |  3h   |Booking_system_project(working)   | Done |
 | 26.11.2024 |  3h   |Booking_system_project(working)   | Done |
 | 1.12.2024 |  3h   |registration_page_first_test(working)   | Done |
+| 2.12.2024 |  3h   |phase_2(step1+step2)   | Done |
+| 5.12.2024 |  3h   |registration_page_first_test(step3+final report submit)   | Done |
 
 
 
