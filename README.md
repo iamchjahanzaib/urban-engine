@@ -23,6 +23,10 @@
 | 1.12.2024 |  3h   |registration_page_first_test(working)   | Done |
 | 2.12.2024 |  3h   |phase_2(step1+step2)   | Done |
 | 5.12.2024 |  3h   |registration_page_first_test(step3+final report submit)   | Done |
+| 6.12.2024 |  1h   |lab3:User role controlled by request parameter(access control)   | Done |
+| 6.12.2024 |  1h   |lab4:User role can be modified in user profile(access control)   | Done |
+| 8.12.2024 |  1h   |lab3:Password reset broken logic(Authentication)   | Done |
+
 
 
 
