@@ -15,6 +15,7 @@
 4. http://localhost:8000/resources --> GET and POST
 5. http://localhost:8000/reservation --> GET and POST
 6. http://localhost:8000/resourcesList --> GET
+7. securityrevised.md (for phase 3)
 # Logbook
 | Date | Used Hours    | Subject(s) NAME    | Output |
 | :-----: | :---: | :---: | :--- |
