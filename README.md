@@ -43,6 +43,7 @@
 | 6.12.2024 |  1h   |lab3:User role controlled by request parameter(access control)   | Done |
 | 6.12.2024 |  1h   |lab4:User role can be modified in user profile(access control)   | Done |
 | 8.12.2024 |  1h   |lab3:Password reset broken logic(Authentication)   | Done |
+| 10.12.2024 |  3h   |PHASE 3:(SECURITY)   | Done |
 
 
 
