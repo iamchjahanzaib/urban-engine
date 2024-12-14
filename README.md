@@ -45,7 +45,7 @@
 | 6.12.2024 |  1h   |lab4:User role can be modified in user profile(access control)   | Done |
 | 8.12.2024 |  1h   |lab3:Password reset broken logic(Authentication)   | Done |
 | 10.12.2024 |  3h   |PHASE 3:(SECURITY)   | Done |
-| 11.12.2024 |  1h   |SQL INJECTION LAB 3:SQL injection attack, querying the database type and version on Oracle  | Done |
+| 11.12.2024 |  1h   |SQL INJECTION LAB 3:(SECURITY)   | Done |
 | 11.12.2024 |  1h   |SQL INJECTION LAB 3:SQL injection attack, querying the database type and version on MySQL and Microsoft  | Done |
 
 
