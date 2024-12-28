@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
     <script>
         let client;
-        let stationId = "jahanzaib"; // Default station ID
+        let stationId = "Jahanzaib"; // Default station ID
 
         function connectMQTT() {
             client = new Paho.MQTT.Client("broker.emqx.io", Number(8084), "clientId");
@@ -73,7 +73,7 @@
     <h1>Current Indoor Weather (SM)</h1>
     <div>
         <label for="stationId">Weather Station ID:</label>
-        <input type="text" id="stationId" value="jahanzaib" oninput="updateStationId()">
+        <input type="text" id="stationId" value="Jahanzaib" oninput="updateStationId()">
     </div>
     <div>
         <p>Temperature: <span class="value" id="temperature">--</span> °C</p>
